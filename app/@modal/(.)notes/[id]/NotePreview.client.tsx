@@ -3,10 +3,10 @@
 import {useQuery} from "@tanstack/react-query";
 import { useParams, useRouter } from "next/navigation";
 import { fetchNoteById } from "@/lib/api"
-import css from './NotePrewiew.module.css'
+import css from './NotePreview.module.css'
 import Modal from "@/components/Modal/Modal";
 
-type Props = object;
+type Props = Record<string, never>;
 
 const NotePreviewClient: React.FC<Props> = () => {
     const { id } = useParams<{ id: string }>();
